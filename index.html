@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator Paradox - Lab 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Intro Screen -->
+    <div id="intro">
+        <h1 id="introText"></h1>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="hidden">
+
+        <div class="floating-words">
+            <span>SPA</span>
+            <span>REST</span>
+            <span>Async</span>
+            <span>useEffect</span>
+            <span>MongoDB</span>
+            <span>Validation</span>
+            <span>Node</span>
+            <span>React</span>
+        </div>
+
+        <h2 class="title">CLO Validation Interface</h2>
+
+        <form id="validationForm" novalidate>
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Your Full Name">
+            <small class="error" id="nameError"></small>
+
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="example@domain.com">
+            <small class="error" id="emailError"></small>
+
+            <label>Favorite Experiment:</label>
+            <select id="experiment">
+                <option value="">Select</option>
+                <option>Client-side Validation</option>
+                <option>SPA Development</option>
+                <option>REST APIs</option>
+                <option>Deployment</option>
+            </select>
+            <small class="error" id="expError"></small>
+
+            <label>
+                <input type="checkbox" id="confirm">
+                I confirm validation is essential.
+            </label>
+            <small class="error" id="confirmError"></small>
+
+            <button type="submit" id="submitBtn">Validate</button>
+        </form>
+
+        <div id="successMessage" class="hidden">
+            <h2>Full Stack Thinking Detected.</h2>
+            <p>This experiment demonstrates:</p>
+            <p>CLO 1, CLO 2, CLO 6, CLO 15</p>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
